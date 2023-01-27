@@ -1,0 +1,110 @@
+/*Offcanvas*/
+.navbar-nav{
+    margin-top: 40px;
+}
+.sidebar-nav ul li a{
+    font-size: 20px;
+    color: black;
+    display: block;
+    padding: 6px 10px;
+    transition: 0.5s;
+}
+.sidebar-nav ul li a:hover{
+    background: white;
+    border-radius: 4px;
+}
+.sidebar-nav .offcanvas{
+    width: 306px;
+    border: none;
+}
+.sidebar-nav .offcanvas ul li a span{
+    font-size: 18px;
+    position: relative;
+    top: -4px;
+    transition: 0.5s;
+}
+.sidebar-nav .offcanvas ul li a:hover span{
+    padding-left: 10px;
+}
+.sidebar-nav .dropdown-toggle::after{
+    position: relative;
+    top: 3px;
+}
+.btn-group{
+    left: 90px;
+}
+#dropdownMenuButton{
+    font-size: 20px;
+    border: none;
+    background: transparent;
+}
+#drop-item{
+    border: none;
+    background: transparent;
+}
+.adress{
+    margin-top: 20px;
+}
+
+/*body*/
+section{
+    margin-top: 150px;
+    text-align: center;
+}
+section h2{
+    margin-bottom: 40px;
+}
+.wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.searchbox{
+    position: relative;
+}
+.searchbox input{
+    opacity: 0.5;
+    margin-top: 10px;
+    width: 0;
+    border: 0;
+    height: 50px;
+    padding: 0px 35px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px 1px #b6bbc0;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.5s linear;
+}
+.searchbtn{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: transparent;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s 0.6s linear;
+}
+.searchbtn #searchfas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #42be11;
+    font-size: 22px;
+    transition: all 0.5s 0.6s linear;
+}
+.searchbtn.bg-green{
+    background: #42be11;
+    transition: all 0.2s linear;
+}
+.searchbtn #searchfas.color-white{
+    color: white;
+    transition: all 0.2s linear;
+}
+.searchbox .input.active-width{
+    width: 300px;
+}
