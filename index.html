@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Machine</title>
+</head>
+
+<body>
+    <hr id="hr">
+    <div id="main">
+        <div id="tete">
+            <div id="ecran"></div>
+            <div id="res"></div>
+        </div>
+        <p><sup>©2023</sup></p>
+        <div id="container">
+            <table id="tab">
+                <colgroup>
+                    <col style="width: 25%">
+                    <col style="width: 25%">
+                    <col style="width: 25%">
+                    <col style="width: 22%">
+                </colgroup>
+                <tr class="blue">
+                    <td><input name="btn" onclick="effaceTout()" type="button" value="c"></td>
+                    <td><input name="btn" onclick="calcul(this.value)" type="button" value="÷"></td>
+                    <td><input name="btn" onclick="calcul(this.value)" type="button" value="×"></td>
+                    <td><input name="btn" onclick="efffacer()" type="button" value="del"></td>
+                </tr>
+                <tr>
+                    <td><input name="btn" onclick="nombre(this.value)" type="button" value="7"></td>
+                    <td><input name="btn" onclick="nombre(this.value)" type="button" value="8"></td>
+                    <td><input name="btn" onclick="nombre(this.value)" type="button" value="9"></td>
+                    <td class="blue"><input name="btn" onclick="calcul(this.value)" type="button" value="-"></td>
+                </tr>
+                <tr>
+                    <td><input name="btn" onclick="nombre(this.value)" type="button" value="4"></td>
+                    <td><input name="btn" onclick="nombre(this.value)" type="button" value="5"></td>
+                    <td><input name="btn" onclick="nombre(this.value)" type="button" value="6"></td>
+                    <td class="blue"><input name="btn" onclick="calcul(this.value)" type="button" value="+"></td>
+                </tr>
+                <tr>
+                    <td><input name="btn" onclick="nombre(this.value)" type="button" value="1"></td>
+                    <td><input name="btn" onclick="nombre(this.value)" type="button" value="2"></td>
+                    <td><input name="btn" onclick="nombre(this.value)" type="button" value="3"></td>
+                    <td id="egale" rowspan="2"><input name="btn" onclick="resultat()" type="button" value="="></td>
+                </tr>
+                <tr>
+                    <td><input name="btn" onclick="pourcentage()" type="button" value="%"></td>
+                    <td><input name="btn" onclick="nombre(this.value)" type="button" value="0"></td>
+                    <td><input name="btn" onclick="nombre(this.value)" type="button" value="."></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
